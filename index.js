@@ -5,11 +5,7 @@
 // print whether the user prefers a "Regular" or "Sugar-free" variety. If the preference is not set, default to "Regular".
 
 let userPreference = 'Sugar-free'; // Possible values: 'Regular', 'Sugar-free', or undefined
-if (userPreference === 'Sugar-free') {
-    console.log('Sugar-free');
-} else {
-    console.log('Regular');
-}
+console.log(userPreference === 'Sugar-free' ? 'Sugar-free' : 'Regular');
 
 // #### Challenge 2: Stock Check
 // You have a variable that tracks the number of Monster Energy cans left in the fridge. 
@@ -24,12 +20,7 @@ console.log(cansLeft < 5 ? "Time to restock!" : "We're stocked!");
 // If the heart rate is below 100 bpm, print "Boost needed!", otherwise, print "Energy levels are high!".
 
 let heartRate = 95; // Current heart rate in bpm
-
-if (heartRate < 100) {
-  console.log("Boost needed!");
-} else {
-  console.log("Energy levels are high!");
-}
+console.log(heartRate < 100 ? "Boost Needed!" : "Energy levels are high!")
 
 
 // #### Challenge 4: Temperature Suitability
@@ -41,17 +32,12 @@ console.log(currentTemp <= 5 ? "Chilled to perfection!" : "Needs a cooler!");
 
 
 // #### Challenge 5: Late Night Coding Session
-// Determine if it's a good idea to have a Monster Energy drink based on the current hour.
+// Write your code below this line to determine if it's a good idea to have a Monster Energy drink based on the current hour
 // If it's between 7am and midnight (24-hour format), print "Unleash the beast!",
 // otherwise, print "Better stick to water."
 
-// Define the current hour in 24-hour format
-let currentHour = 22; 
+let currentHour = 22; // Define the current hour in 24-hour format
 console.log(currentHour >= 7 && currentHour < 24 ? "Unleash the beast!" : "Better stick to water.");
-
-// Write your code below this line to determine if it's a good idea to have a Monster Energy drink based on the current hour
-// If it's between 7am and midnight (24-hour format), print "Unleash the beast!"
-// Otherwise, print "Better stick to water."
 
 
 
